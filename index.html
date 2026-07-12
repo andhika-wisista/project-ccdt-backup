@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhika Wisista | Portfolio</title>
+    <!-- AOS (Animate On Scroll) untuk animasi -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Tailwind Output CSS Anda -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+</head>
+<!-- Mengubah total background menjadi Dark Navy (bg-slate-950) dan teks default menjadi terang -->
+<body class="font-body bg-slate-950 text-slate-300 antialiased transition-colors">
+
+    <!-- ==== 1. NAVBAR ==== -->
+    <nav class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+            <a href="#" class="text-lg font-bold text-white tracking-wide hover:text-white-400 transition">Andhika Wisista</a>
+            
+            <!-- Menu Navigasi (PC / Layar Lebar) -->
+            <div class="hidden items-center gap-8 md:flex">
+                <a data-aos="zoom-in" href="#about" class="font-medium hover:text-cyan-400 transition">About</a>
+                <a data-aos="zoom-in" data-aos-delay="100" href="#skills" class="font-medium hover:text-cyan-400 transition">Skills</a>
+                <a data-aos="zoom-in" data-aos-delay="200" href="#projects" class="font-medium hover:text-cyan-400 transition">Projects</a>
+                <a data-aos="zoom-in" data-aos-delay="300" href="#contact" class="font-medium hover:text-cyan-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==== 2. HERO SECTION ==== -->
+    <section class="mx-auto max-w-5xl px-6 py-24 flex flex-col items-center text-center justify-center min-h-[75vh]">
+        <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+            Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-red1-400 to-blue-500">Andhika Wisista</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl max-w-2xl text-slate-400 leading-relaxed mb-8">
+            Mahasiswa teknologi informasi yang sedang mempelajari pengembangan website.
+        </p>
+        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-wrap gap-4 justify-center">
+            <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-black-500 to-red-600 text-white font-medium rounded-lg shadow-md hover:from-cyan-600 hover:to-blue-700 hover:shadow-cyan-500/20 transition">
+                Lihat Project Saya
+            </a>
+            <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-black-500 to-red-600 border border-slate-800 text-slate-300 font-medium rounded-lg hover:from-cyan-600 hover:to-blue-700 hover:shadow-cyan-500/20 transition">
+                Hubungi Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== 3. ABOUT SECTION ==== -->
+    <section id="about" class="mx-auto max-w-5xl px-6 py-20 border-t border-slate-900">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+            <div data-aos="fade-right" class="md:col-span-1 flex justify-center">
+                <!-- Foto Profil dengan aksen glow neon -->
+                <div class="w-48 h-48 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg shadow-cyan-500/10">
+                    AW
+                </div>
+            </div>
+            <div data-aos="fade-left" class="md:col-span-2">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Tentang Saya</h2>
+                <p class="text-slate-400 leading-relaxed mb-4">
+                    Saya adalah seorang mahasiswa yang yang berfokus pada pembuatan situs web modern dengan menggunakan HTML, CSS, JavaScript, dan framework CSS seperti Tailwind CSS.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== 4. SKILLS SECTION ==== -->
+    <section id="skills" class="mx-auto max-w-5xl px-6 py-20 border-t border-slate-900">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <h2 data-aos="fade-up" class="text-2xl md:text-3xl font-bold text-white mb-3">Keahlian</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="text-slate-400">Beberapa bahasa pemrograman yang saya gunakan dalam pembuatan sebuah website</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <!-- Skill Cards dengan warna Navy sedikit lebih terang (slate-900) agar kontras -->
+            <div data-aos="fade-up" class="p-6 bg-slate-900/50 border border-slate-900 rounded-xl text-center hover:border-cyan-500/50 hover:scale-105 transition-all">
+                <div class="text-xl font-bold text-white">HTML</div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-slate-900/50 border border-slate-900 rounded-xl text-center hover:border-cyan-500/50 hover:scale-105 transition-all">
+                <div class="text-xl font-bold text-white">CSS</div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-slate-900/50 border border-slate-900 rounded-xl text-center hover:border-cyan-500/50 hover:scale-105 transition-all">
+                <div class="text-xl font-bold text-white">JavaScript</div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="p-6 bg-slate-900/50 border border-slate-900 rounded-xl text-center hover:border-cyan-500/50 hover:scale-105 transition-all">
+                <div class="text-xl font-bold text-white">Tailwind CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== 5. PROJECTS SECTION ==== -->
+    <section id="projects" class="mx-auto max-w-5xl px-6 py-20 border-t border-slate-900">
+        <div class="mb-12">
+            <h2 data-aos="fade-right" class="text-2xl md:text-3xl font-bold text-white mb-3">Project Terbaru</h2>
+            <p data-aos="fade-right" data-aos-delay="100" class="text-slate-400">Project yang saya buat menggunakan HTML, CSS, JavaScript, dan Tailwind CSS.</p>
+        </div>
+
+        <div class="grid md:grid-cols-1">
+            <!-- Card Project 1-->
+            <div data-aos="fade-up" data-aos-delay="200" class="group bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden hover:border-slate-800 transition-all">
+                <div class="py-24 bg-slate-900 flex items-center justify-center text-slate-600 group-hover:bg-slate-800/80 transition-colors duration-300">
+                    <span>[ Mockup Project 1 ]</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Portofolio CCDT 2026</h3>
+                    <p class="text-slate-400 mb-4 text-sm leading-relaxed">Website portofolio hasil dari pelatihan CCDT 2026.</p>
+                    <div class="flex gap-2 mb-4">
+                        <span class="px-2.5 py-1 text-xs bg-slate-900 text-slate-400 rounded-md font-medium border border-slate-800">HTML & CSS</span>
+                        <span class="px-2.5 py-1 text-xs bg-slate-900 text-slate-400 rounded-md font-medium border border-slate-800">AOS Library</span>
+                        <span class="px-2.5 py-1 text-xs bg-slate-900 text-slate-400 rounded-md font-medium border border-slate-800">Javascript</span>
+                    </div>
+                    <a href="https://portfolio-ccdt-andhika.vercel.app/" class="text-cyan-400 font-semibold text-sm hover:underline inline-flex items-center gap-1">
+                        Lihat Detail &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== 6. CONTACT SECTION ==== -->
+    <section id="contact" class="mx-auto max-w-5xl px-6 py-20 border-t border-slate-900 mb-12">
+        <div class="bg-gradient-to-r from-blue-950 to-slate-900 border border-blue-900/50 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden shadow-xl" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-4">Tertarik Bekerja Sama?</h2>
+            <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm md:text-base">
+                Silakan hubungi saya untuk kolaborasi project baru atau sekadar menyapa. Saya akan merespons secepat mungkin!
+            </p>
+            <a href="mailto:andhikawisista@example.com" class="px-8 py-3 bg-cyan-500 text-slate-950 font-bold rounded-xl shadow-md hover:bg-cyan-400 transition inline-block shadow-cyan-500/10">
+                Kirim Email Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== 7. FOOTER ==== -->
+    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600">
+        <p>&copy; 2026 Andhika Wisista. All rights reserved.</p>
+    </footer>
+
+    <!-- ==== JAVASCRIPT IMPORTS ==== -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
