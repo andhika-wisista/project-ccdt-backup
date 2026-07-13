@@ -22,6 +22,20 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
     <!-- ==== TAILWIND CSS ==== -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee { animation: marquee 10s linear infinite; }
+        
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .floating { animation: float 6s ease-in-out infinite; }
+    </style>
 </head> 
 <body class="font-body bg-slate-950 text-slate-300 antialiased transition-colors">
 
@@ -60,6 +74,14 @@
             </div>
         </div>
     </section>
+
+    <div class="py-10 border-y border-white/5 bg-white/[0.01] overflow-hidden whitespace-nowrap">
+        <div class="flex animate-marquee gap-20">
+            <span class="text-5xl font-black opacity-10 uppercase italic">HTML</span>
+            <span class="text-5xl font-black opacity-10 uppercase italic">Tailwind CSS</span>
+            <span class="text-5xl font-black opacity-10 uppercase italic">JavaScript</span>
+        </div>
+    </div>
 
     <section id="about" class="border-t border-slate-950 dark:border-slate-800 bg-slate-950 dark:bg-slate-800 px-6 py-20 md:py-28 transition-colors">
         <div class="mx-auto max-w-5xl">
