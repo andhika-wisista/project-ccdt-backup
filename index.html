@@ -7,7 +7,7 @@
     <meta name="keywords" content="Andhika Wisista, Full-Stack Developer, Web Developer, Portfolio, Projects">
     <meta name="author" content="Andhika Wisista">
 
-    <title>Andhika Wisista - Full-Stack Developer</title>
+    <title>Andhika Wisista - Web Developer</title>
 
     <!-- ==== FAVICON ==== -->
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
@@ -22,20 +22,6 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
     <!-- ==== TAILWIND CSS ==== -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee { animation: marquee 10s linear infinite; }
-        
-        /* Floating Animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        .floating { animation: float 6s ease-in-out infinite; }
-    </style>
 </head> 
 <body class="font-body bg-slate-950 text-slate-300 antialiased transition-colors">
 
@@ -50,6 +36,23 @@
                 <a data-aos="zoom-in" data-aos-delay="100" href="#skills" class="font-medium hover:text-cyan-400 transition">Skills</a>
                 <a data-aos="zoom-in" data-aos-delay="200" href="#projects" class="font-medium hover:text-cyan-400 transition">Projects</a>
                 <a data-aos="zoom-in" data-aos-delay="300" href="#contact" class="font-medium hover:text-cyan-400 transition">Contact</a>
+                <a href="mailto:email@kamu.com" class="btn-primary hidden sm:inline-flex">Hire Me</a>
+                <button id="menuToggle" type="button" aria-label="Toggle menu" class="md:hidden inline-flex items-center justify-center text-slate-700">
+                    <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+                    <div class="flex flex-col gap-4">
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="mailto:email@kamu.com" class="inline-flex btn-primary w-fit">Hire Me</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -59,9 +62,9 @@
             <p data-aos="fade-up" class="mb-1 text-sm font-semibold uppercase tracking-widest text-brand-600">
                 Website Developer
             </p>
-            <h1  data-aos="fade-right" class="font-heading font-extrabold leading-[1.08] tracking-tight text-slate-900 dark:text-white"
+            <h1  data-aos="fade-up" class="font-heading font-extrabold leading-[1.08] tracking-tight text-slate-900 dark:text-white"
                 style="font-size: clamp(2.5rem, 6vw + 0.5rem, 4.5rem)">
-                <span class="text-brand-600">Mengubah ide</span> menjadi website yang <span class="text-brand-600">menarik</span>
+                mengubah <span data-aos="fade-up" class="text-brand-600">ide</span> <span data-aos="fade-up" class="text-brand-600">menjadi</span> website yang <span data-aos="fade-up"  class="text-brand-600">menarik</span>
             </h1>
             <p data-aos="fade-up" class="mx-auto mt-6 max-w-xl leading-relaxed text-slate-500 dark:text-slate-400"
                 style="font-size: clamp(1rem, 1.5vw + 0.25rem, 1.125rem)">
@@ -79,7 +82,7 @@
             <div class="text-center">
                 <p data-aos="zoom-in" class="mb-2 text-sm font-semibold uppercase tracking-widest text-brand-600">About</p>
                 <h2 data-aos="fade-up" class="font-heading text-3xl font-bold tracking-tight text-slate-900 dark:text-white md:text-4xl">
-                    Sedikit tentang saya
+                    Tentang Saya
                 </h2>
             </div>
 
@@ -108,12 +111,12 @@
     
     <section id="skills" class="py-32 bg-white/[0.01]">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black uppercase mb-20 italic">Skills</h2>
+            <h2 data-aos="fade-up" class="text-4xl font-black uppercase mb-20 italic">Skills</h2>
             <div class="flex flex-wrap justify-center gap-16 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-                <i class="fa-brands fa-html5 text-7xl"></i>
-                <i class="fa-brands fa-css3-alt text-7xl"></i>
-                <i class="fa-brands fa-js text-7xl"></i>
-                <i class="fa-brands fa-github text-7xl"></i>
+                <i data-aos="fade-up" class="fa-brands fa-html5 text-7xl"></i>
+                <i data-aos="fade-up" class="fa-brands fa-css3-alt text-7xl"></i>
+                <i data-aos="fade-up" class="fa-brands fa-js text-7xl"></i>
+                <i data-aos="fade-up" class="fa-brands fa-github text-7xl"></i>
             </div>
         </div>
     </section>
@@ -127,9 +130,9 @@
                         <img src="assets/images/foto 1.png"/>
                     </div>
                     <p>Project yang saya hasilkan dari pelatihan CCDT 2026</p>
-                    <span class="mt-5 badge">HTML</span>
-                    <span class="badge">TAILWIND CSS</span>
-                    <span class="badge">JavaScript</span><br>
+                    <span class="mt-5 p-2 m-1 badge">HTML</span>
+                    <span class="p-2 m-1 badge">TAILWIND CSS</span>
+                    <span class="p-2 m-1 badge">JavaScript</span><br>
                     <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
                         <a href="https://portfolio-ccdt-andhika.vercel.app/" class="btn-primary">Lihat Project ></a>
                     </div>
@@ -151,8 +154,8 @@
             <div class="mt-7 flex flex-col items-center gap-6">
                 <a data-aos="fade-up" href="mailto:andhikawisista@gmail.com" class="btn-primary">Kirim Email</a>
                     <div class="flex items-center gap-5">
-                        <a data-aos="fade-up" href="https://linkedin.com/in/andhikawisista" class="nav-link">LinkedIn</a>
-                        <a data-aos="fade-up" href="https://github.com/andhikawisista" class="nav-link">GitHub</a>
+                        <a data-aos="fade-up" href="https://www.linkedin.com/in/andhika-wisista-7a882a381" class="nav-link">LinkedIn</a>
+                        <a data-aos="fade-up" href="https://github.com/andhika-wisista" class="nav-link">GitHub</a>
                     </div>
             </div>
         </div>
@@ -162,16 +165,9 @@
     <footer class="border-t border-slate-100 dark:border-slate-800 px-6 py-6 transition-colors">
         <div class="mx-auto flex max-w-5xl flex-col items-center gap-1 text-xs text-slate-400 dark:text-slate-500 md:flex-row md:justify-between">
             <p>&copy; 2026 Andhika Wisista</p>
-            <p>Dibangun dengan Tailwind CSS</p>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="./assets/js/main.js"></script>   
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
