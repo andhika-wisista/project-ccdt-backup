@@ -26,6 +26,13 @@
       hover:bg-brand-900 active:scale-95;
   }
 
+  @layer components {
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-brand-600 px-5 py-2.5
+      text-sm font-semibold text-white transition-all duration-200
+      hover:bg-brand-900 active:scale-95;
+  }
+
   .btn-outline {
     @apply inline-flex items-center gap-2 rounded-lg bg-brand-600 px-5 py-2.5
       text-sm font-semibold text-white transition-all duration-200
